@@ -1,0 +1,91 @@
+<p>Pick an answer to the following question.</p>
+
+<ol>
+    <!-- <li *ngFor="let index of data"> -->
+    <li> {{data[0]['question']}}
+        <div>
+            <div>
+                <input type = "radio"
+                name = 1
+                id = "1"
+                value = "1.0"
+                checked="checked"
+                />
+                <label for = "1">{{data[0]['incorrect'][0]}}</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type = "radio"
+                name = 1
+                id = "2"
+                value = "2.0"
+                />
+                <label for = "2">{{data[0]['incorrect'][1]}}</label>
+            </div>
+            <div>
+                <input type = "radio"
+                name = 1
+                id = "3"
+                value = "3.0"
+                />
+                <label for = "3">{{data[0]['incorrect'][2]}}</label>
+            </div>
+            <div>
+                <input type = "radio"
+                name = 1
+                id = "4"
+                value = "4.0"
+                />
+                <label for = "4">{{data[0]['correct']}}</label>
+            </div>
+        </div>
+        <button>Back</button>
+        <button>Check Answer</button>
+        <button>Next</button>
+    </li>
+    <li> {{data[1]['question']}}
+        <div>
+            <div>
+                <input type = "radio"
+                name = 2
+                id = "5"
+                value = "1.0"
+                checked="checked"
+                />
+                <label for = "5">{{data[1]['incorrect'][0]}}</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type = "radio"
+                name = 2
+                id = "6"
+                value = "2.0"
+                />
+                <label for = "6">{{data[1]['incorrect'][1]}}</label>
+            </div>
+            <div>
+                <input type = "radio"
+                name = 2
+                id = "7"
+                value = "3.0"
+                />
+                <label for = "7">{{data[1]['incorrect'][2]}}</label>
+            </div>
+            <div>
+                <input type = "radio"
+                name = 2
+                id = "8"
+                value = "4.0"
+                />
+                <label for = "8">{{data[1]['correct']}}</label>
+            </div>
+        </div>
+        <button>Back</button>
+        <button>Check Answer</button>
+        <button>Next</button>
+</li>
+
+</ol>
+<button type="submit">Submit Trivia Quiz</button>
